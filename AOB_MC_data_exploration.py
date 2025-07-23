@@ -60,5 +60,6 @@ for k in cell_extended_filt_genex:
     
     
 #%% data visualization
-
+gnames_in_df = [g_name for g_name in gnames if g_name in df_all_datasets.columns]
+plot_heatmap(df_all_datasets[gnames_in_df])
         
